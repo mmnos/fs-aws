@@ -15,7 +15,7 @@ app.use(express.json());
 // app.use("/", htmlRoutes);
 // app.use("/api", apiRoutes);
 
-const MONGO_URI = process.env.ATLAS_URI;
+const MONGO_URI = process.env.MONGO_ATLAS_URI;
 
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
