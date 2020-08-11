@@ -11,7 +11,7 @@ const bookSchema = new Schema({
     required: "Please provide a book title.",
   },
   authors: {
-    type: String,
+    type: [String],
     required: "Please provide the name(s) of author(s).",
   },
   description: {
