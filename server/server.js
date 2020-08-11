@@ -10,10 +10,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // const htmlRoutes = require("./routes/html-routes");
-// const apiRoutes = require("./routes/api-routes");
+const apiRoutes = require("./routes/api-routes");
 
 // app.use("/", htmlRoutes);
-// app.use("/api", apiRoutes);
+app.use("/api", apiRoutes);
 
 const MONGO_URI = process.env.MONGO_ATLAS_URI;
 
