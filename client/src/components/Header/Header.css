@@ -1,5 +1,10 @@
+.siteHeader {
+  font-size: 20px;
+}
+
 .headerLinks {
   color: white;
+  font-size: 20px;
 }
 
 .headerLinks:hover {
