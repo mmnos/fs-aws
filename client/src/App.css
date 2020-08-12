@@ -1,9 +1,9 @@
-body {
+.main {
   background: black;
 }
 
 .App-logo {
-  height: 3vmin;
+  height: 30px;
   pointer-events: none;
   display: flex;
   justify-content: center;
@@ -22,5 +22,11 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .App-logo {
+    height: 30px;
   }
 }
