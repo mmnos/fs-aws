@@ -45,6 +45,7 @@ const GlobalState = (props) => {
 
   const deleteBook = async (id) => {
     try {
+      // eslint-disable-next-line
       const result = axios.delete(`/api/books/${id}`);
 
       dispatch({

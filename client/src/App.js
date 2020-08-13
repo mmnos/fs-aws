@@ -6,17 +6,21 @@ import Saved from "./pages/Saved";
 import { Container } from "react-bootstrap";
 import "./App.css";
 
+import GlobalState from "./context/GlobalState";
+
 const App = () => {
   return (
-    <Router>
-      <Header />
-      <Container>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/saved" component={Saved} />
-        </Switch>
-      </Container>
-    </Router>
+    <GlobalState>
+      <Router>
+        <Header />
+        <Container>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/saved" component={Saved} />
+          </Switch>
+        </Container>
+      </Router>
+    </GlobalState>
   );
 };
 
