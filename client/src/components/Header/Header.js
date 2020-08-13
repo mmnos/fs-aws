@@ -19,10 +19,10 @@ const Header = () => {
           Google Books
         </Navbar.Brand>
         <Navbar.Collapse className="justify-content-end">
-          <Nav.Link className="headerLinks" href="/">
+          <Nav.Link className="headerLinkHome" href="/">
             <FontAwesomeIcon icon={faHome} />
           </Nav.Link>
-          <Nav.Link className="headerLinks" href="/saved">
+          <Nav.Link className="headerLinkSaved" href="/saved">
             <FontAwesomeIcon icon={faHeart} />{" "}
           </Nav.Link>
         </Navbar.Collapse>

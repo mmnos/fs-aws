@@ -2,11 +2,24 @@
   font-size: 20px;
 }
 
-.headerLinks {
-  color: white;
+.headerLinkHome {
+  color: #61dafb;
   font-size: 20px;
+  transition: all 0.2s ease-in-out;
 }
 
-.headerLinks:hover {
+.headerLinkSaved {
+  color: salmon;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.headerLinkHome:hover {
   color: #61dafb;
+  transform: scale(1.2);
+}
+
+.headerLinkSaved:hover {
+  color: salmon;
+  transform: scale(1.2);
 }
