@@ -28,9 +28,7 @@ const Home = () => {
         </Col>
       </Row>
       <Row>
-        <Col sm={12}>
-          <BookList />
-        </Col>
+        <BookList />
       </Row>
     </>
   );

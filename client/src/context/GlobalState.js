@@ -29,7 +29,7 @@ const GlobalState = (props) => {
     } catch (err) {
       dispatch({
         type: BOOK_ERROR,
-        payload: err.response.msg,
+        payload: err,
       });
     }
   };
@@ -46,7 +46,7 @@ const GlobalState = (props) => {
     } catch (err) {
       dispatch({
         type: BOOK_ERROR,
-        payload: err.response.msg,
+        payload: err,
       });
     }
   };
@@ -62,7 +62,7 @@ const GlobalState = (props) => {
     } catch (err) {
       dispatch({
         type: BOOK_ERROR,
-        payload: err.response.msg,
+        payload: err,
       });
     }
   };
@@ -79,7 +79,7 @@ const GlobalState = (props) => {
     } catch (err) {
       dispatch({
         type: BOOK_ERROR,
-        payload: err.response.msg,
+        payload: err,
       });
     }
   };
