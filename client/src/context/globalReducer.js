@@ -1,4 +1,10 @@
-import { GET_SAVED_BOOKS, ADD_BOOK, REMOVE_BOOK, BOOK_ERROR } from "./types";
+import {
+  GET_SAVED_BOOKS,
+  GET_SEARCH_RESULTS,
+  ADD_BOOK,
+  REMOVE_BOOK,
+  BOOK_ERROR,
+} from "./types";
 
 export default (state, action) => {
   switch (action.type) {
@@ -6,6 +12,11 @@ export default (state, action) => {
       return {
         ...state,
         savedBooks: action.payload,
+      };
+    case GET_SEARCH_RESULTS:
+      return {
+        ...state,
+        searchResults: action.payload,
       };
     case ADD_BOOK:
       return {

@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../undraw_the_world_is_mine_nb0e.svg";
 import Search from "../components/Search/Search";
+import BookList from "../components/BookList/BookList";
 import { Row, Col } from "react-bootstrap";
 
 const Home = () => {
@@ -24,6 +25,11 @@ const Home = () => {
       <Row>
         <Col sm={{ span: 8, offset: 2 }}>
           <Search />
+        </Col>
+      </Row>
+      <Row>
+        <Col sm={12}>
+          <BookList />
         </Col>
       </Row>
     </>
