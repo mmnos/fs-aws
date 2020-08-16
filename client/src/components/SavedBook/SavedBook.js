@@ -21,7 +21,7 @@ const SavedBook = ({ id, title, authors, description, image, link }) => {
   const handleDelete = (id) => {
     deleteBook(id);
   };
-  console.log(link);
+
   return (
     <>
       <Col sm={4}>
