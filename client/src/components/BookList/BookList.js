@@ -12,12 +12,14 @@ const BookList = () => {
       {searchResults.items &&
         searchResults.items.map((book) => (
           <Book
-            key={book.id}
+            key={book.etag}
+            bookId={book.id}
             title={book.volumeInfo.title}
             authors={book.volumeInfo.authors}
             description={book.volumeInfo.description}
             image={book.volumeInfo.imageLinks.thumbnail}
             link={book.saleInfo.buyLink}
+            book={book}
           />
         ))}
     </>

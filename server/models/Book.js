@@ -24,7 +24,6 @@ const bookSchema = new Schema({
   },
   link: {
     type: String,
-    required: true,
   },
   day: {
     type: Date,

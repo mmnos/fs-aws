@@ -52,8 +52,14 @@ const GlobalState = (props) => {
   };
 
   const saveBook = async (book) => {
+    const config = {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+
     try {
-      const result = await axios.post("/api/books");
+      const result = await axios.post("/api/books", book, config);
 
       dispatch({
         type: ADD_BOOK,
