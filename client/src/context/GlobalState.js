@@ -21,7 +21,6 @@ const GlobalState = (props) => {
   const getBooks = async () => {
     try {
       const result = await axios.get("/api/books");
-      console.log(result.data);
       dispatch({
         type: GET_SAVED_BOOKS,
         payload: result.data,

@@ -1,10 +1,14 @@
 import React from "react";
+import SavedList from "../components/SavedList/SavedList";
+import { Row } from "react-bootstrap";
 
 const Saved = () => {
   return (
-    <div>
-      <h1>Saved</h1>
-    </div>
+    <>
+      <Row>
+        <SavedList />
+      </Row>
+    </>
   );
 };
 
