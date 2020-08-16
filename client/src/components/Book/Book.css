@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:ital,wght@0,400;1,100&display=swap");
+
+div.bookInfo {
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 1%;
+}
+
+h2.title {
+  font-size: 28px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+span.writtenBy {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+
+p.author {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+p.description {
+  font-family: "Raleway", sans-serif;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+a.buyLink,
+a.save {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a.buyLink:hover {
+  color: #61dafb;
+}
+
+a.save:hover {
+  color: salmon;
+}
+
+p.links {
+  text-align: center;
+}
