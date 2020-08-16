@@ -22,7 +22,6 @@ const Search = () => {
     if (search === "") {
       console.log("Please enter something");
     } else {
-      console.log("you entered something yay");
       getSearchResults(search);
       setSearch("");
     }
