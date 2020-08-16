@@ -17,7 +17,7 @@ const Book = ({ bookId, title, authors, description, image, link, book }) => {
   const { saveBook } = globalContext;
 
   const handleSave = (thisBook) => {
-    console.log(thisBook);
+    // console.log(thisBook);
     saveBook({
       bookId,
       title,
@@ -59,10 +59,8 @@ const Book = ({ bookId, title, authors, description, image, link, book }) => {
                   </a>
                 )}
               </span>
-              <span>
-                <a className="save" href="#" onClick={() => handleSave(book)}>
-                  <FontAwesomeIcon icon={faHeart} />
-                </a>
+              <span className="save" onClick={() => handleSave(book)}>
+                <FontAwesomeIcon icon={faHeart} />
               </span>
             </p>
           </div>

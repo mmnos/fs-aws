@@ -17,7 +17,11 @@ const BookList = () => {
             title={book.volumeInfo.title}
             authors={book.volumeInfo.authors}
             description={book.volumeInfo.description}
-            image={book.volumeInfo.imageLinks.thumbnail}
+            image={
+              book.volumeInfo.imageLinks
+                ? book.volumeInfo.imageLinks.thumbnail
+                : "https://via.placeholder.com/400"
+            }
             link={book.saleInfo.buyLink}
             book={book}
           />

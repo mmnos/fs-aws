@@ -19,10 +19,9 @@ const SavedBook = ({ id, title, authors, description, image, link }) => {
   const { deleteBook } = globalContext;
 
   const handleDelete = (id) => {
-    console.log(id);
     deleteBook(id);
   };
-
+  console.log(link);
   return (
     <>
       <Col sm={4}>
@@ -54,10 +53,8 @@ const SavedBook = ({ id, title, authors, description, image, link }) => {
                 </a>
               )}
             </span>
-            <span>
-              <a className="save" href="#" onClick={() => handleDelete(id)}>
-                <FontAwesomeIcon icon={faTrash} />
-              </a>
+            <span className="delete" onClick={() => handleDelete(id)}>
+              <FontAwesomeIcon icon={faTrash} />
             </span>
           </p>
         </div>

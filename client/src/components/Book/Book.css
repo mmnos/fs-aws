@@ -31,7 +31,7 @@ p.description {
 }
 
 a.buyLink,
-a.save {
+span.save {
   color: black;
   font-size: 20px;
   text-decoration: none;
@@ -45,7 +45,7 @@ a.buyLink:hover {
   color: #61dafb;
 }
 
-a.save:hover {
+span.save:hover {
   color: salmon;
 }
 
