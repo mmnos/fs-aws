@@ -2,10 +2,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const bookSchema = new Schema({
-  // googleId: {
-  //   type: String,
-  //   required: true,
-  // },
+  bookId: {
+    type: String,
+    required: true,
+  },
   title: {
     type: String,
     required: "Please provide a book title.",
