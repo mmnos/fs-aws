@@ -20,7 +20,7 @@ mongoose.connect(MONGO_URI, {
 app.use("/api", apiRoutes);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("./client/build"));
+  app.use(express.static("client/build"));
 }
 
 app.get("*", (req, res) => {
