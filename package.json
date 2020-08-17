@@ -1,5 +1,5 @@
 {
-  "name": "fs-aws",
+  "name": "react-google-books",
   "version": "1.0.0",
   "description": "",
   "main": "./server/server.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mmnos/fs-aws.git"
+    "url": "git+https://github.com/mmnos/react-google-books.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mmnos/fs-aws/issues"
+    "url": "https://github.com/mmnos/react-google-books/issues"
   },
-  "homepage": "https://github.com/mmnos/fs-aws#readme",
+  "homepage": "https://github.com/mmnos/react-google-books#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "concurrently": "^5.3.0",
